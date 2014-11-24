@@ -4,26 +4,35 @@ layout: default
 
 <div class="home">
 	<!-- Form -->
-	<form id="mapFilterForm" class="form-horizontal" role="form">
-		<select type="text" placeholder="User" name="userID" id="userID" class="form-control"></select>
+	<form id="mapFilterForm" class="form-horizontal form-inline" role="form">
+		<select type="text" placeholder="User" name="userID" id="userID" class="form-control">
+			<option value="" disabled selected>Select your user</option>
+		</select>
 
-		<div class="input-append date" id="datetimepicker_from">
+		<select type="text" placeholder="-- Visualization --" name="mapType" class="form-control">
+			<option value="" disabled selected>Select your map</option>
+			<option value="clusters">Clusters map</option>
+			<option value="heat">Heat map</option>
+		</select>
+
+		<div class="input-group date" id="datetimepicker_from">
+			<span class="input-group-addon"><i class="icon-th glyphicon glyphicon-calendar"></i></span>
 		    <input type="text" placeholder="From" name="from" value="" class="form-control" readonly>
-		    <span class="add-on"><i class="icon-th glyphicon glyphicon-calendar"></i></span>
 		</div>
-		<div class="input-append date" id="datetimepicker_to">
+		<div class="input-group date" id="datetimepicker_to">
+		    <span class="input-group-addon"><i class="icon-th glyphicon glyphicon-calendar"></i></span>
 		    <input type="text" placeholder="To" name="to" value="" class="form-control" readonly>
-		    <span class="add-on"><i class="icon-th glyphicon glyphicon-calendar"></i></span>
 		</div>
 
-		<input type="submit" name="submit" value="Show data	" class="form-control pull-right"/>
-		<input type="button" name="reset" value="Clean map" id="cleanMap" class="form-control pull-right"/>
-		<input type="reset" name="reset" value="Reset form" id="resetForm" class="form-control pull-right"/>
+		<input type="submit" name="submit" value="Show data" class="form-control"/>
 
-		<p>Options — 
+		<!-- <input type="button" name="reset" value="Clean map" id="cleanMap" class="form-control pull-right"/>
+		<input type="reset" name="reset" value="Reset form" id="resetForm" class="form-control pull-right"/> -->
+
+		<!-- <p>Options — 
 			<input type="radio" name="mapType" value="clusters" id="clusters" checked="checked"><label for="clusters">Clusters</label>
 			<input type="radio" name="mapType" value="heat" id="heat"><label for="heat">Heat map</label>
-		</p>
+		</p> -->
 	</form>
 
 	<!-- Google map -->

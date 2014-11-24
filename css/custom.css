@@ -12,26 +12,10 @@
 	border-radius: 10px;
 }
 
-.form-control {
-	display: inline-block;
-	width: auto;
-	margin: 5px 0px;
-}
-
-.form-control[type=submit]{
-	background: #6EB43F;
-	color: white;
-}
-
-#cleanMap.form-control {
-	float:right;
-	margin-right: 5px;
-	background: #ff4d4d;
-	color: white;
-}
-
-#resetForm.form-control {
-	margin-right: 5px;
+.logo {
+	width: 40px;
+	margin-bottom: 10px;
+	vertical-align:middle;
 }
 
 label {
@@ -39,6 +23,32 @@ label {
 	font-weight: normal;
 }
 
-.input-append {
+.form-control {
 	display: inline-block;
+	width: auto;
+	margin: 5px 0px;
+}
+
+.input-group .form-control {
+    margin: 0px !important;
+    width: 200px;
+    display: inline-block;
+}
+
+/* Buttons style */
+
+#cleanMap.form-control { /* Clean map */
+	float:right;
+	margin-right: 5px;
+	background: #ff4d4d;
+	color: white;
+}
+
+.form-control[type=submit]{ /* Send */
+	background: #6EB43F;
+	color: white;
+}
+
+#resetForm.form-control { /* Reset */
+	margin-right: 5px;
 }

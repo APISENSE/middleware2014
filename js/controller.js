@@ -4,7 +4,8 @@ $(document).ready(function() {
 
 // Deciders
 $("#mapFilterForm").submit( function() {
-	data($( "input:radio[name=mapType]:checked" ).val(), $("select[name=userID]").val(),$("input[name=from]").val(),$("input[name=to]").val());
+	// "input:radio[name=mapType]:checked" ).val()
+	data($("select[name=mapType]").val(), $("select[name=userID]").val(),$("input[name=from]").val(),$("input[name=to]").val());
 	return false;
  });
 
