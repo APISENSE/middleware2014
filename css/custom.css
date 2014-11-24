@@ -18,6 +18,19 @@
 	vertical-align:middle;
 }
 
+.thumbnail img {
+	width: 100%;
+}
+
+.thumbnail .img-wrapper {
+	max-height: 180px;
+	overflow: hidden;
+}
+
+.caption {
+	text-align: center;
+}
+
 label {
 	margin: 0 5px;
 	font-weight: normal;

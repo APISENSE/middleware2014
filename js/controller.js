@@ -5,6 +5,7 @@ $(document).ready(function() {
 // Deciders
 $("#mapFilterForm").submit( function() {
 	// "input:radio[name=mapType]:checked" ).val()
+	initialize();
 	data($("select[name=mapType]").val(), $("select[name=userID]").val(),$("input[name=from]").val(),$("input[name=to]").val());
 	return false;
  });
@@ -49,8 +50,8 @@ function data(type, userID, from, to) {
 			var latlngArray = [];
 
 			$.each(data, function(i, item) {
-				var lat = data[i].coordinates.latitude;
-				var lng = data[i].coordinates.longitude;
+				var lat = data[i].data.coordinates.latitude;
+				var lng = data[i].data.coordinates.longitude;
 				var latlng = new google.maps.LatLng(lat, lng);
 				markersArray.push(createMarker(latlng));
 				latlngArray.push(latlng);
@@ -76,7 +77,7 @@ function initializeForm() {
 		type: "GET",
 		url: url,
 		success: function(data){
-			$("#userID").append('<option value="all">-- All users --</option>');
+			$("#userID").append('<option value="all" selected>All users</option>');
 			$.each(data, function(i, item) {
 				// Avoid duplicata
 				if ($("#userID option[value='"+data[i].user+"']").length == 0)
