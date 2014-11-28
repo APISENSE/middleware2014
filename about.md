@@ -14,6 +14,17 @@ Learn more about Apisense [apisense.com](http://apisense.com)
 	<div class="col-sm-2 col-md-2">
 		<div class="thumbnail">
 			<div class="img-wrapper">
+	      <img data-src="holder.js/300x300" src="https://pbs.twimg.com/profile_images/1064217644/photo_400x400.jpg" alt="Romain Rouvoy">
+	      	</div>
+	      <div class="caption">
+	        <h5>Romain Rouvoy</h5>
+	      </div>
+	    </div>
+	</div>
+
+	<div class="col-sm-2 col-md-2">
+		<div class="thumbnail">
+			<div class="img-wrapper">
 	      <img data-src="holder.js/300x300" src="https://lh5.googleusercontent.com/-fLYmnWSJ8G8/AAAAAAAAAAI/AAAAAAAAAAA/u2D_D5DnRlw/photo.jpg" alt="Nicolas Haderer">
 	      	</div>
 	      <div class="caption">
