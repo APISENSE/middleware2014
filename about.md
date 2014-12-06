@@ -4,8 +4,6 @@ title: About
 permalink: /about/
 ---
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In efficitur a est id rhoncus. Vivamus accumsan lectus lorem, id laoreet erat feugiat eu. In congue finibus nisl ac semper. In hac habitasse platea dictumst. Nunc eleifend aliquet ullamcorper. </p>
-
 Learn more about Apisense [apisense.com](http://apisense.com)
 
 <h2>Team</h2>
