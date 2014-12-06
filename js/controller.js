@@ -63,6 +63,8 @@ function data(type, userID, from, to) {
 				return;
 			} else {
 				feedback.style.display = "none";
+				var last = latlngArray.slice(-1)[0];
+				setGoogleMapPosition(last.lat(), last.lng());
 			}
 
 			/** Switch between clusters and heat map */
@@ -77,6 +79,10 @@ function data(type, userID, from, to) {
 			}
 		}
 	});
+}
+
+function setGoogleMapPosition(latitude, longitude) {
+	map.setCenter({lat: latitude, lng: longitude});
 }
 
 /** Retrieve and display all users **/
