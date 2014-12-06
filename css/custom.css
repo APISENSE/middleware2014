@@ -12,6 +12,10 @@
 	border-radius: 10px;
 }
 
+#feedback {
+	display: none;
+}
+
 .logo {
 	width: 40px;
 	margin-bottom: 10px;

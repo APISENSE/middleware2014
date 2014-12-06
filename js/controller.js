@@ -57,6 +57,14 @@ function data(type, userID, from, to) {
 				latlngArray.push(latlng);
 			});
 
+			var feedback = document.getElementById("feedback");
+			if (latlngArray.length == 0) {
+				feedback.style.display = "block";
+				return;
+			} else {
+				feedback.style.display = "none";
+			}
+
 			/** Switch between clusters and heat map */
 			if (type === "clusters")
 				new MarkerClusterer(map, markersArray);
