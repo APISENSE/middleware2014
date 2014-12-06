@@ -8,6 +8,7 @@ var mapHeat;
 function initialize() {
 	var mapOptions = {
 		zoom: 12,
+		scrollwheel: false,
 		center: new google.maps.LatLng(44.8333, -0.5667) // Bordeaux : 44.8333, -0.5667
 	};
 
