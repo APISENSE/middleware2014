@@ -47,7 +47,7 @@ Learn more about Apisense [apisense.com](http://apisense.com)
 	<div class="col-sm-2 col-md-2">
 		<div class="thumbnail">
 			<div class="img-wrapper">
-				<img data-src="holder.js/300x300" src="/img/clive.png" alt="Clive Ferret-Canape">
+				<img data-src="holder.js/300x300" src="{{ site.baseurl }}/img/clive.png" alt="Clive Ferret-Canape">
 			</div>
 			<div class="caption">
 				<h5>Clive Ferret-Canape</h5>
@@ -58,7 +58,7 @@ Learn more about Apisense [apisense.com](http://apisense.com)
 	<div class="col-sm-2 col-md-2">
 		<div class="thumbnail">
 			<div class="img-wrapper">
-	      <img data-src="holder.js/300x300" src="/img/default-avatar.png" alt="Antoine Veuiller">
+	      <img data-src="holder.js/300x300" src="{{ site.baseurl }}/img/default-avatar.png" alt="Antoine Veuiller">
 	      	</div>
 	      <div class="caption">
 	        <h5>Antoine Veuiller</h5>
@@ -69,7 +69,7 @@ Learn more about Apisense [apisense.com](http://apisense.com)
 	<div class="col-sm-2 col-md-2">
 		<div class="thumbnail">
 			<div class="img-wrapper">
-	      <img data-src="holder.js/300x300" src="/img/jd_square.jpg" alt="Julien Duribreux">
+	      <img data-src="holder.js/300x300" src="{{ site.baseurl }}/img/jd_square.jpg" alt="Julien Duribreux">
 	      	</div>
 	      <div class="caption">
 	        <h5>Julien Duribreux</h5>
