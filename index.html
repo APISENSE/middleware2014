@@ -1,45 +1,50 @@
 ---
-layout: default
+layout: default-fluid
 ---
 
-<div class="home">
+<div class="alert alert-info" role="alert" id="feedback">No data to display yet, try again later!</div>
 
-	<div class="alert alert-info" role="alert" id="feedback">There is no data to display yet, try again later !</div>
+<div class="row" id="wrapper-form">
+	<div class="col-md-12 text-center">
+		<form id="mapFilterForm" class="form-inline" role="form">
+		  <div class="form-group">
+		    <div class="input-group">
+		      	<select class="form-control" type="text" placeholder="User" name="userID" id="userID">
+				  	<option value="" disabled selected>-- Select user --</option>
+				</select>
+		    </div>
+		  </div>
+		  <div class="form-group">
+		  	<div class="input-group">
+			    <select type="text" placeholder="-- Visualization --" name="mapType" class="form-control">
+					<option value="" disabled>-- Select map --</option>
+					<option value="clusters" selected>Clusters map</option>
+					<option value="heat">Heat map</option>
+				</select>
+			</div>
+		  </div>
+		  <div class="form-group">
+		  	<div class="input-group date" id="datetimepicker_from">
+			    <span class="input-group-addon"><i class="icon-th glyphicon glyphicon-calendar"></i></span>
+			    <input type="text" placeholder="From (optional)" name="from" value="" class="form-control" readonly>
+		    </div>
+		  </div>
+		  <div class="form-group">
+		  	<div class="input-group date" id="datetimepicker_to">
+			    <span class="input-group-addon"><i class="icon-th glyphicon glyphicon-calendar"></i></span>
+			    <input type="text" placeholder="To (optional)" name="to" value="" class="form-control" readonly>
+		    </div>
+		  </div>
+		  <input type="submit" name="submit" value="Show" class="btn btn-default hidden-xs"/>
+		  <input type="submit" name="submit" value="Show" class="btn btn-default btn-lg btn-block visible-xs-block"/>
+		</form>
+	</div>
+</div>
 
-	<!-- Form -->
-	<form id="mapFilterForm" class="form-horizontal form-inline" role="form">
-		<select type="text" placeholder="User" name="userID" id="userID" class="form-control">
-			<option value="" disabled selected>-- Select user --</option>
-		</select>
-
-		<select type="text" placeholder="-- Visualization --" name="mapType" class="form-control">
-			<option value="" disabled>-- Select map --</option>
-			<option value="clusters" selected>Clusters map</option>
-			<option value="heat">Heat map</option>
-		</select>
-
-		<div class="input-group date" id="datetimepicker_from">
-			<span class="input-group-addon"><i class="icon-th glyphicon glyphicon-calendar"></i></span>
-		    <input type="text" placeholder="From" name="from" value="" class="form-control" readonly>
-		</div>
-		<div class="input-group date" id="datetimepicker_to">
-		    <span class="input-group-addon"><i class="icon-th glyphicon glyphicon-calendar"></i></span>
-		    <input type="text" placeholder="To" name="to" value="" class="form-control" readonly>
-		</div>
-
-		<input type="submit" name="submit" value="Show data" class="form-control"/>
-
-		<!-- <input type="button" name="reset" value="Clean map" id="cleanMap" class="form-control pull-right"/>
-		<input type="reset" name="reset" value="Reset form" id="resetForm" class="form-control pull-right"/> -->
-
-		<!-- <p>Options — 
-			<input type="radio" name="mapType" value="clusters" id="clusters" checked="checked"><label for="clusters">Clusters</label>
-			<input type="radio" name="mapType" value="heat" id="heat"><label for="heat">Heat map</label>
-		</p> -->
-	</form>
-
-	<!-- Google map -->
-	<div id="map-canvas"></div>
+<div class="row" id="wrapper-map">
+	<div class="col-md-12 ">
+		<div id="map-canvas"></div>
+	</div>
 </div>
 
 <!-- Date time picker configuration -->
