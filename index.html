@@ -2,8 +2,6 @@
 layout: default-fluid
 ---
 
-<div class="alert alert-info" role="alert" id="feedback">No data to display yet, try again later!</div>
-
 <div class="row" id="wrapper-form">
 	<div class="col-md-12 text-center">
 		<form id="mapFilterForm" class="form-inline" role="form">
@@ -43,7 +41,11 @@ layout: default-fluid
 
 <div class="row" id="wrapper-map">
 	<div class="col-md-12 ">
-		<div id="map-canvas"></div>
+		<div class="alert alert-info alert-dismissible fade in" role="alert" id="feedback">
+			No data to display yet, try again later! <a href="#" class="close-alert"><i class="fa fa-times"></i></a>
+		</div>
+		<div id="map-canvas">
+		</div>
 	</div>
 </div>
 
