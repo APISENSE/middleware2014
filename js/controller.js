@@ -1,5 +1,16 @@
 $(document).ready(function() {
 	initializeForm();
+
+	var browerHeight = $(window).height(),
+		navHeight = $('.navbar-aps').height(),
+		formHeight = $('#wrapper-form').height(),
+		footerHeight = $('.footer').height()+30;
+
+	// Set map height
+	if(browerHeight>640) {
+		$('#map-canvas').height(browerHeight - navHeight - formHeight - footerHeight);
+		$('.container-fluid').addClass('nomargin stickytonav');
+	}
 });
 
 // Deciders
