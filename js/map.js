@@ -1,5 +1,4 @@
 var url = "http://apisense.io/api/v1/589WAYV6DbtzbNk9e3OE/data";
-// http://localhost:9000/api/v1/ZzJnQzkkRehWrqXXomA5/data
 
 var map;
 var mapClustered;
@@ -12,8 +11,7 @@ function initialize() {
 		center: new google.maps.LatLng(44.8333, -0.5667) // Bordeaux : 44.8333, -0.5667
 	};
 
-	map = new google.maps.Map(document.getElementById('map-canvas'),
-	mapOptions);
+	map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 	mapClustered = new MarkerClusterer(map);
 }
 
