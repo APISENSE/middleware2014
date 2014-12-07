@@ -23,14 +23,14 @@ layout: default-fluid
 		  </div>
 		  <div class="form-group">
 		  	<div class="input-group date" id="datetimepicker_from">
-			    <span class="input-group-addon"><i class="icon-th glyphicon glyphicon-calendar"></i></span>
 			    <input type="text" placeholder="From (optional)" name="from" value="" class="form-control" readonly>
+			    <span class="input-group-addon"><i class="icon-th glyphicon glyphicon-calendar"></i></span>
 		    </div>
 		  </div>
 		  <div class="form-group">
 		  	<div class="input-group date" id="datetimepicker_to">
-			    <span class="input-group-addon"><i class="icon-th glyphicon glyphicon-calendar"></i></span>
 			    <input type="text" placeholder="To (optional)" name="to" value="" class="form-control" readonly>
+			    <span class="input-group-addon"><i class="icon-th glyphicon glyphicon-calendar"></i></span>
 		    </div>
 		  </div>
 		  <input type="submit" name="submit" value="Show" class="btn btn-default hidden-xs"/>
@@ -53,7 +53,7 @@ layout: default-fluid
 <script type="text/javascript">
 	$(document).ready(function () {
         $('#datetimepicker_from').datetimepicker({
-			pickTime: false,
+			pickTime: true,
 			// format: 'yyyy-mm-ddThh:ii:ssZ',
 			autoclose: true,
 			todayBtn: true,
