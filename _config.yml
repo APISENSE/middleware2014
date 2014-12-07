@@ -1,13 +1,45 @@
 # Site settings
-title: APISENSE® — Middleware data visualization
-email: contact@apisense.com
-description: > # this means to ignore newlines until "baseurl:"
-  APISENSE® makes it easy to collect data with crowds of mobile phone sensors. 
+title: Privacy-preserving crowd-sensing tasks
+title_short: Demo Middleware 2014
+description: >
+  APISENSE® makes it easy to collect data with crowds of mobile phone sensors.
   Make sense and innovate on top of real world data feedback, in real time!.
-baseurl: "/middleware2014" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+
+email: contact@apisense.com
+baseurl: "/middleware2014"
+url: "http://apisense.github.io"
+
+apisense: APISENSE
+url_apisense: http://www.apisense.com
+
+bee: Bee
+url_bee: https://play.google.com/apps/testing/com.apisense.bee
+
 twitter_username: APISENSE
-github_username:
+github_username: APISENSE
+googleplus_community_url: https://plus.google.com/communities/110676255059293415882
 
 # Build settings
 markdown: kramdown
+
+# Team
+team:
+  - name: Romain Rouvoy
+    img_url: https://pbs.twimg.com/profile_images/1064217644/photo_400x400.jpg
+    twitter_username: RomainRouvoy
+    linkedin_url: http://fr.linkedin.com/in/rouvoy/fr
+  - name: Nicolas Haderer
+    img_url : https://lh5.googleusercontent.com/-fLYmnWSJ8G8/AAAAAAAAAAI/AAAAAAAAAAA/u2D_D5DnRlw/photo.jpg
+    twitter_username: elnicoh91
+    linkedin_url: http://fr.linkedin.com/pub/nicolas-haderer/65/703/459
+  - name: Christophe Ribeiro
+    img_url : https://pbs.twimg.com/profile_images/2612949438/qt2y2gf6jybxn1dm87in_400x400.jpeg
+    twitter_username: chrissom_
+    linkedin_url: https://www.linkedin.com/in/christopheribeiro/en
+  - name: Clive Ferret-Canape
+  - name: Antoine Veuiller
+  - name: Julien Duribreux
+    img_url: https://pbs.twimg.com/profile_images/378800000842441427/4969812dc42a87e04f9f2840fb97f2e6_400x400.jpeg
+    twitter_username: JulienDuribreux
+
+
