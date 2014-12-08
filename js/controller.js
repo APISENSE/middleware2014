@@ -65,11 +65,13 @@ function data(type, userID, from, to) {
 			var latlngArray = [];
 
 			$.each(data, function(i, item) {
-				var lat = data[i].data.coordinates.latitude;
-				var lng = data[i].data.coordinates.longitude;
-				var latlng = new google.maps.LatLng(lat, lng);
-				markersArray.push(createMarker(latlng));
-				latlngArray.push(latlng);
+				if(data[i].hasOwnProperty('coordinates')) {
+					var lat = data[i].data.coordinates.latitude;
+					var lng = data[i].data.coordinates.longitude;
+					var latlng = new google.maps.LatLng(lat, lng);
+					markersArray.push(createMarker(latlng));
+					latlngArray.push(latlng);
+				}
 			});
 
 			var feedback = document.getElementById("feedback");
