@@ -63,9 +63,8 @@ function data(type, userID, from, to) {
 		success: function(data){
 			var markersArray = [];
 			var latlngArray = [];
-
 			$.each(data, function(i, item) {
-				if(data[i].hasOwnProperty('coordinates')) {
+				if(data[i].data.hasOwnProperty('coordinates')) {
 					var lat = data[i].data.coordinates.latitude;
 					var lng = data[i].data.coordinates.longitude;
 					var latlng = new google.maps.LatLng(lat, lng);
