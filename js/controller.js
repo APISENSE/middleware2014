@@ -42,8 +42,8 @@ function queryBuilder(userID, from, to) {
 	if (userID === "all") allUsers = true;
 
 	/* Ajust dates if necessary */
-	if (from == "") from = 0; else from = moment(from).unix();
-	if (to == "") to = new Date().getTime(); else to = moment(to).unix();
+	if (from == "") from = 0; else from = (moment(from).unix() * 1000);
+	if (to == "") to = new Date().getTime(); else to = (moment(to).unix() * 1000);
 
 	/* Build query */
 	if (allUsers)
