@@ -110,8 +110,11 @@ function initializeForm() {
 			$("#userID").append('<option value="all" selected>All users</option>');
 			$.each(data, function(i, item) {
 				// Avoid duplicata
-				if ($("#userID option[value='"+data[i].user+"']").length == 0)
-					$("#userID").append('<option value="'+data[i].user+'">'+data[i].user+'</option>');
+				if ($("#userID option[value='"+data[i].user+"']").length == 0) {
+					if(data[i].hasOwnProperty('user') && data[i].data.hasOwnProperty('coordinates')) {
+						$("#userID").append('<option value="'+data[i].user+'">'+data[i].user+'</option>');
+					}
+				}
 			});
 		}
 	});
